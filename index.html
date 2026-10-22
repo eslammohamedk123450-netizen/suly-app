@@ -141,13 +141,13 @@
     .download-panel h2 { margin: 0 0 8px; font-size: clamp(1.6rem, 3vw, 2.25rem); }
     .download-panel p { margin: 0; color: var(--muted); }
 
-    .screenshots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+    .screenshots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
     .screenshot-placeholder {
       min-height: 210px; display: grid; place-items: center; text-align: center;
       padding: 10px; border: 1px solid rgba(255,255,255,.12); border-radius: 20px;
       color: var(--muted); background: rgba(255,255,255,.025); overflow: hidden;
     }
-    .screenshot-placeholder img { width: 100%; height: 330px; object-fit: cover; object-position: top center; border-radius: 14px; display: block; }
+    .screenshot-placeholder img { width: 100%; height: 500px; object-fit: contain; object-position: top center; border-radius: 14px; display: block; background: #071b17; }
     .featured-screenshot { max-width: 390px; margin: 28px auto; }
     .featured-screenshot img { height: 590px; object-fit: contain; background: #071b17; }
     .screenshot-caption { padding: 8px 4px 2px; font-size: .85rem; }
@@ -160,7 +160,7 @@
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
     @media (max-width: 1050px) {
-      .screenshots { grid-template-columns: repeat(3, 1fr); }
+      .screenshots { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 780px) {
@@ -174,9 +174,9 @@
       .download-panel { padding: 28px 22px; flex-direction: column; align-items: stretch; text-align: center; }
       .screenshots { grid-template-columns: repeat(2, 1fr); }
       .screenshot-placeholder { min-height: 150px; }
-      .screenshot-placeholder img { height: 260px; }
+      .screenshot-placeholder img { height: 430px; }
       .featured-screenshot { max-width: 330px; }
-      .featured-screenshot img { height: 530px; }
+      .featured-screenshot img { height: 430px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
